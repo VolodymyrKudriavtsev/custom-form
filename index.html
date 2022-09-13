@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
+  <body>    
     <div class="form-group">
       <div class="select-wrapper">
         <select name="select-category" id="" class="select">
@@ -25,5 +25,31 @@
         </select>
       </div>
     </div>
+<br>
+    <div class="form-group">
+      <div class="dropdown">
+        <button type="button" class="dropdown__button">Якість друку</button>
+        <ul class="dropdown__list">
+          <li class="dropdown__list-item" data-value="300micron">300 мікрон</li>
+          <li class="dropdown__list-item" data-value="200micron">200 мікрон</li>
+          <li class="dropdown__list-item" data-value="100micron">100 мікрон</li>
+          <li class="dropdown__list-item" data-value="need-help">Труднощі у виборі - ми допоможемо</li>
+        </ul>
+        <input type="text" name="select-category" value="" class="dropdown__input--hidden">
+      </div>
+      
+
+      
+      <!-- <div class="select-wrapper">
+        <select name="select-category" id="" class="select">
+          <option value="300micron">300 мікрон</option>
+          <option value="200micron">200 мікрон</option>
+          <option value="100micron">100 мікрон</option>
+          <option value="need-help">Труднощі у виборі - ми допоможемо</option>
+        </select>
+      </div> -->
+    </div>
+
+    <script src="./dropdown.js"></script>
   </body>
 </html>
