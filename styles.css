@@ -1,0 +1,54 @@
+/* Стилізація поля селекта */
+.select {
+    /* Прибираємо браузерну стрілку*/    
+    /* -moz-appearance: none;
+    -webkit-appearance: none; */
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+
+    /* розтягуємо блок на 100% батьківського блоку */
+    width: 100%;
+    
+    /* задаємо власні фон і рамку */
+    border-bottom: 1px solid #487996;
+    /* background-color: #ffffff; */
+    /* border-radius: 5px; */
+    
+    /* відступи і рамки до тексту */
+    padding: 4px 30px 4px 0px;
+}
+
+/* ????? */
+.select:focus {
+    /* color: #ffffff; */
+    /* background-color: rgba(72, 121, 150, 0.5); */
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper::before {
+content: '';
+position: absolute;
+top: 50%;
+right: 4px;
+transform: translateY(-50%);
+display: block;
+width: 16px;
+height: 10px;
+
+/* знімаємо клік з псевдоелементу */
+pointer-events: none;
+
+/* трикутник (розміри і колір - за макетом) */
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 10px 8px 0 8px;
+border-color: #2b2b2b transparent transparent transparent;
+
+}
