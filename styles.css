@@ -84,9 +84,7 @@
 }
 
 .dropdown__button:focus, .dropdown__button--active {
-/* ????? */
-
-background-color: aquamarine;
+/* ????? додаємо стилі за необхідності*/
 }
 
 .dropdown__button::after {
